@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f3f3f3;
+  color: #000;
+}
+
+/* NAVBAR */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  color: white;
+  padding: 15px 40px;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.hire-btn {
+  background: #f5b400;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.hire-btn:hover {
+  background: #ffcc00;
+}
+
+/* ABOUT */
+.about {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  align-items: center;
+}
+
+.about-text h1 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.about-img img {
+  width: 250px;
+  border-radius: 50%;
+  border: 5px solid #f5b400;
+}
+
+/* SERVICES + FORM */
+.services-form {
+  display: flex;
+  justify-content: space-between;
+  background: #f5b400;
+  padding: 40px;
+}
+
+.services h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 15px;
+}
+
+.services ol li {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* FORM */
+.contact-box {
+  background: black;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 300px;
+}
+
+.contact-box h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.contact-box input,
+.contact-box textarea {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+}
+
+.contact-box button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background: #f5b400;
+  cursor: pointer;
+}
+
+.contact-box button:hover {
+  background: #ffcc00;
+}
+
+/* PROJECTS */
+.projects {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.project-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.card {
+  background: white;
+  padding: 10px;
+  border: 2px solid #000;
+  transition: transform 0.3s;
+}
+
+.card img {
+  width: 200px;
+  height: 280px;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.view-btn {
+  background: #f5b400;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.view-btn:hover {
+  background: #ffcc00;
+}
+
+/* FOOTER */
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+.socials span {
+  margin: 0 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .services-form {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .project-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
